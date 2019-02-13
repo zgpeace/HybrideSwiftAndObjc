@@ -12,6 +12,8 @@
 		E29012D22212DECA0006752E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29012D02212DECA0006752E /* Main.storyboard */; };
 		E29012D42212DECB0006752E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29012D32212DECB0006752E /* Assets.xcassets */; };
 		E29012D72212DECB0006752E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29012D52212DECB0006752E /* LaunchScreen.storyboard */; };
+		E29012E12212E2820006752E /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E29012E02212E2820006752E /* CustomObject.m */; };
+		E29012E32213AC380006752E /* MySwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29012E22213AC380006752E /* MySwiftObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		E29012D32212DECB0006752E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E29012D62212DECB0006752E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E29012D82212DECB0006752E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E29012DE2212E2810006752E /* HybrideSwiftAndObjc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HybrideSwiftAndObjc-Bridging-Header.h"; sourceTree = "<group>"; };
+		E29012DF2212E2820006752E /* CustomObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
+		E29012E02212E2820006752E /* CustomObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
+		E29012E22213AC380006752E /* MySwiftObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,10 @@
 				E29012D32212DECB0006752E /* Assets.xcassets */,
 				E29012D52212DECB0006752E /* LaunchScreen.storyboard */,
 				E29012D82212DECB0006752E /* Info.plist */,
+				E29012DF2212E2820006752E /* CustomObject.h */,
+				E29012E02212E2820006752E /* CustomObject.m */,
+				E29012DE2212E2810006752E /* HybrideSwiftAndObjc-Bridging-Header.h */,
+				E29012E22213AC380006752E /* MySwiftObject.swift */,
 			);
 			path = HybrideSwiftAndObjc;
 			sourceTree = "<group>";
@@ -96,6 +106,7 @@
 				TargetAttributes = {
 					E29012C82212DECA0006752E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -135,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29012E32213AC380006752E /* MySwiftObject.swift in Sources */,
 				E29012CF2212DECA0006752E /* ViewController.swift in Sources */,
+				E29012E12212E2820006752E /* CustomObject.m in Sources */,
 				E29012CD2212DECA0006752E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 473VV338ZU;
 				INFOPLIST_FILE = HybrideSwiftAndObjc/Info.plist;
@@ -291,6 +305,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zgpeace.HybrideSwiftAndObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HybrideSwiftAndObjc/HybrideSwiftAndObjc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 473VV338ZU;
 				INFOPLIST_FILE = HybrideSwiftAndObjc/Info.plist;
@@ -309,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zgpeace.HybrideSwiftAndObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HybrideSwiftAndObjc/HybrideSwiftAndObjc-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
